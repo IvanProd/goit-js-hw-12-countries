@@ -1,7 +1,76 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: rgb(44, 114, 38);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.search-field {
+  display: block;
+  width: 25%;
+  border: 1px solid rgb(139, 137, 137);
+  border-radius: 5px;
+  margin: 15px auto 15px auto;
+  padding: 15px;
+
+}
+
+.country-info {
+  width: 50%;
+  margin: 50px auto 0 auto;
+}
+
+.country-card__title {
+  text-align: center;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.country-card__wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.country-card__item {
+  width: calc((100% - 60px) / 2);
+  
+}
+.border-flag{
+  border: 1px solid gray;
+}
+.cards-list {
+  list-style-type: none;
+}
+
+.cards-list__title {
+  font-weight: bold;
+}
+
+.cards-list__item {
+  margin-top: 15px;
+  padding-left: 5px;
+}
+
+.language-list {
+  list-style-type: disc;
+}
+
+.language-list__item {
+  margin-top: 15px;
+}
+
+.pnotify-pre-line {
+  font-size: 16px;
+}
